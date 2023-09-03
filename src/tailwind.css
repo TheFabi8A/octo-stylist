@@ -5,9 +5,9 @@
 @font-face {
   font-family: "sm-bold";
   src:
-    url("fonts/SpaceMono-Bold.woff2") format("woff2"),
-    url("fonts/SpaceMono-Bold.woff") format("woff"),
-    url("fonts/SpaceMono-Bold.ttf") format("truetype");
+    url("assets/fonts/SpaceMono-Bold.woff2") format("woff2"),
+    url("assets/fonts/SpaceMono-Bold.woff") format("woff"),
+    url("assets/fonts/SpaceMono-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -16,9 +16,9 @@
 @font-face {
   font-family: "sm-regular";
   src:
-    url("fonts/SpaceMono-Regular.woff2") format("woff2"),
-    url("fonts/SpaceMono-Regular.woff") format("woff"),
-    url("fonts/SpaceMono-Regular.ttf") format("truetype");
+    url("assets/fonts/SpaceMono-Regular.woff2") format("woff2"),
+    url("assets/fonts/SpaceMono-Regular.woff") format("woff"),
+    url("assets/fonts/SpaceMono-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
