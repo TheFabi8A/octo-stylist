@@ -15,6 +15,5 @@ export default function useFetch(userName) {
       .then((dataUser) => setDataUser(dataUser))
       .catch((error) => setErrorFetch(error));
   }, [userName]);
-  console.log(dataUser);
   return { dataUser, errorFetch };
 }
