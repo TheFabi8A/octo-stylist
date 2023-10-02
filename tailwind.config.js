@@ -10,8 +10,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        "sm-regular": "sm-regular, sans-serif",
-        "sm-bold": "sm-bold, sans-serif",
+        "sm-regular": "Space Mono Regular, monospace",
+        "sm-bold": "Space Mono Bold, monospace",
       },
       colors: {
         blue: "hsl(212, 100%, 50%)",
@@ -32,6 +32,7 @@ export default {
             default: "#000",
             primary: "hsl(217, 21%, 21%)",
             secondary: "hsl(217, 20%, 51%)",
+            warning: "#eab308",
           },
         },
         dark: {
@@ -39,6 +40,7 @@ export default {
             default: "#fff",
             primary: "hsl(220, 40%, 13%)",
             secondary: "hsl(227, 100%, 98%)",
+            warning: "#eab308",
           },
         },
       },

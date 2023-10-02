@@ -1,4 +1,4 @@
-import { createContext, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 
 export const GithubUserContext = createContext();
 
@@ -10,13 +10,26 @@ UserContext.propTypes = {
 };
 
 export default function UserContext({ children }) {
-  const [userName, setUserName] = useState("thefabi8a");
-  const { dataUser, errorFetch } = useFetch(userName);
+  const [theme, setTheme] = useState("dark" || "light");
+
+  const [patternSelected, setSelectedPattern] = useState("Python");
+  console.log(patternSelected);
+
+  const [userName, setUserName] = useState(
+    localStorage.getItem("userName") || "thefabi8a",
+  );
+
+  const [accentColor, setAccentColor] = useState("#ff22ff");
+
+  const { dataUser, errorFetch, topRepos, remainingRequests } =
+    useFetch(userName);
+
+  useEffect(() => {
+    localStorage.setItem("userName", userName);
+  }, [userName]);
 
   const [queryInput, setQueryInput] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
-
-  const [theme, setTheme] = useState("dark" || "light");
 
   return (
     <GithubUserContext.Provider
@@ -31,6 +44,12 @@ export default function UserContext({ children }) {
         setQueryInput,
         errorMessage,
         setErrorMessage,
+        topRepos,
+        remainingRequests,
+        accentColor,
+        setAccentColor,
+        patternSelected,
+        setSelectedPattern,
       }}
     >
       {children}

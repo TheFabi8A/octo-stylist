@@ -8,225 +8,202 @@ import {
   CardBody,
   CardFooter,
   Avatar,
-  Badge,
-  Divider,
+  Chip,
+  Link,
+  Progress,
 } from "@nextui-org/react";
 
 import {
-  ArrowIcon,
-  CompanyIcon,
-  LocationIcon,
-  OctIcon,
+  BranchIcon,
+  ForkIcon,
+  IssueIcon,
+  LawIcon,
   SearchIcon,
-  TwitterIcon,
-  WebsiteIcon,
+  StarIcon,
 } from "../Svg";
 
 import { GithubUserContext } from "@user-context";
 
 import Index from ".";
+import { UserCard } from "../Cards/UserCard";
+import { MenuStylesCard } from "../MenuStylesCard";
 
 export default function Main() {
-  const { theme, dataUser, queryInput, setQueryInput, errorMessage } =
-    useContext(GithubUserContext);
-
   const {
-    login,
-    name,
-    avatar_url,
-    followers,
-    following,
-    public_repos,
-    bio,
-    twitter_username,
-    company,
-    location,
-    html_url,
-    blog,
-  } = dataUser;
+    dataUser,
+    queryInput,
+    setQueryInput,
+    topRepos,
+    remainingRequests,
+    errorMessage,
+  } = useContext(GithubUserContext);
 
-  const {
-    handleInputBlur,
-    onChangeInput,
-    handleSearchButton,
-    CREATE_AT,
-    WEBSITE,
-  } = Index();
+  const { avatar_url } = dataUser;
+
+  const { handleInputBlur, onChangeInput, handleSearchButton } = Index();
 
   return (
-    <main className="w-full max-w-lg p-4 md:w-[500px]">
-      <div className="mb-4 flex items-center gap-4">
-        <Input
-          onBlur={handleInputBlur}
-          variant="underlined"
-          onChange={onChangeInput}
-          value={queryInput}
-          label="Search Github Username."
-          isClearable
-          onClear={() => setQueryInput("")}
-          radius="sm"
-          startContent={
-            <SearchIcon className="pointer-events-none flex-shrink-0" />
-          }
-          errorMessage={errorMessage}
+    <main className="p-4">
+      <div className="mx-auto max-w-md">
+        <Progress
+          maxValue={60}
+          classNames={{
+            base: "w-full",
+            track:
+              "bg-white transition-colors dark:bg-very-dark-blue-darker border border-2 border-blue",
+            indicator: "!bg-blue",
+            label: "transition-colors",
+            labelWrapper: "",
+            value: "transition-colors",
+          }}
+          isStriped
+          value={remainingRequests}
+          label="Remaining Requests"
+          size="md"
+          aria-label="Remaining requests..."
+          showValueLabel
+          formatOptions={{ style: "decimal" }}
         />
-        <Button variant="bordered" onClick={handleSearchButton}>
-          Search
-        </Button>
+        <div className="mb-4 flex w-full items-center justify-between gap-4 pb-4">
+          <Input
+            color="warning"
+            classNames={{
+              clearButton: "text-blue",
+              errorMessage: "text-red-500 !absolute !left-0 !p-0",
+            }}
+            onBlur={handleInputBlur}
+            variant="underlined"
+            onChange={onChangeInput}
+            value={queryInput}
+            label="Search Github Username."
+            isClearable
+            onClear={() => setQueryInput("")}
+            radius="sm"
+            startContent={
+              <SearchIcon className="pointer-events-none flex-shrink-0 text-blue" />
+            }
+            errorMessage={errorMessage}
+          />
+          <Button
+            color="warning"
+            variant="bordered"
+            onClick={handleSearchButton}
+            className="text-blue dark:text-white"
+          >
+            Search
+          </Button>
+        </div>
       </div>
-      <section className="rounded-2xl bg-gradient-to-t from-light-blue to-white p-1">
-        <Card className="gap-4 bg-gradient-to-t from-light-blue to-white p-4 dark:from-dark-blue-darker dark:to-very-dark-blue-darker">
-          <CardHeader className="mb-1 flex gap-7 py-0">
-            <Badge
-              placement="bottom-right"
-              className="h-10 w-10"
-              content={
-                <a href={html_url} target="_blank" rel="noopener noreferrer">
-                  <OctIcon
-                    width="32"
-                    height="32"
-                    className={`${
-                      theme === "dark" ? "fill-black" : "fill-white"
-                    }`}
-                  />
-                </a>
-              }
-              color="default"
-            >
-              <Avatar
-                className="h-24 w-24 rounded-md"
-                isBordered
-                src={avatar_url}
-              />
-            </Badge>
-            <div className="flex flex-col">
-              <h2 className="text-lg">{name}</h2>
-              <strong className="decoration underline decoration-light-blue decoration-wavy dark:decoration-white">
-                @{login}
-              </strong>
-              <p>{CREATE_AT}</p>
-            </div>
-          </CardHeader>
-          <Divider />
-          <CardBody className="rounded-md bg-white/25 backdrop-blur-sm dark:bg-black/25">
-            {bio ? (
-              <>
-                <div className="flex items-center overflow-hidden">
-                  <h3 className="mr-4 inline font-sm-bold text-2xl capitalize">
-                    bio
-                  </h3>
-                  <Divider />
-                </div>
-                <p>{bio}</p>
-              </>
-            ) : (
-              <p>This profile has no bio</p>
-            )}
-            <div className="mt-4 flex items-center justify-center gap-2 rounded-md bg-white p-4 dark:bg-dark-blue-darker">
-              <div>
-                <h3>Repos</h3>
-                <em className="font-sm-bold">{public_repos}</em>
-              </div>
-              <Divider orientation="vertical" />
-              <div>
-                <h3>Followers</h3>
-                <em className="font-sm-bold">{followers}</em>
-              </div>
-              <Divider orientation="vertical" />
-              <div>
-                <h3>Following</h3>
-                <em className="font-sm-bold">{following}</em>
-              </div>
-            </div>
-            <ul className="mt-4 flex flex-col gap-2 text-sm">
-              {location && (
-                <li className="flex items-center gap-2">
-                  <span>
-                    <LocationIcon />
-                  </span>
-                  {location}
-                </li>
-              )}
-              {company && (
-                <li className="flex items-center gap-2">
-                  <span>
-                    <CompanyIcon />
-                  </span>
-                  {company}
-                </li>
-              )}
-              {blog && (
-                <li className="flex items-center gap-2">
-                  <span>
-                    <WebsiteIcon />
-                  </span>
-                  <a
-                    className="underline"
-                    href={blog}
-                    target="_blank"
-                    rel="noopener noreferrer"
+      {remainingRequests > 0 && (
+        <>
+          <section className="mt-10 max-w-md rounded-2xl md:mx-auto">
+            <UserCard />
+          </section>
+          <MenuStylesCard />
+          <section className="mt-4 flex flex-wrap justify-center gap-4">
+            {Array.isArray(topRepos) &&
+              topRepos.map(
+                ({
+                  id,
+                  name,
+                  full_name,
+                  license,
+                  stargazers_count,
+                  topics,
+                  forks_count,
+                  default_branch,
+                  description,
+                  open_issues_count,
+                  html_url,
+                }) => (
+                  <Card
+                    isPressable
+                    disableRipple
+                    key={id}
+                    className="min-h-full w-full max-w-md select-none bg-very-light-blue dark:bg-dark-blue-darker dark:text-white"
                   >
-                    {WEBSITE}
-                  </a>
-                </li>
+                    <CardHeader className="items-center gap-4">
+                      <Avatar
+                        title="Owner's avatar"
+                        src={avatar_url}
+                        size="sm"
+                        className="ml-[6px] shrink-0"
+                        isBordered
+                      />
+                      <div className="flex flex-col">
+                        <div>
+                          <Link
+                            aria-label={`Go to ${name} repository`}
+                            className="flex items-center text-left hover:underline hover:decoration-yellow-500 hover:decoration-wavy dark:text-white"
+                            href={html_url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            isExternal
+                            showAnchorIcon
+                          >
+                            {full_name}
+                          </Link>
+                        </div>
+                        <div className="flex gap-2">
+                          <div className="flex items-center gap-1">
+                            <StarIcon className="w-4 fill-yellow-500" />
+                            <p>{stargazers_count}</p>
+                          </div>
+                          <div className="flex items-center gap-1">
+                            <ForkIcon className="w-4 fill-yellow-500" />
+                            <p>{forks_count}</p>
+                          </div>
+                          <div className="flex items-center gap-1">
+                            <BranchIcon className="w-4 fill-yellow-500" />
+                            <p>{default_branch}</p>
+                          </div>
+                          <div className="flex items-center gap-1">
+                            <IssueIcon className="w-4 fill-yellow-500" />
+                            <p>{open_issues_count}</p>
+                          </div>
+                        </div>
+                      </div>
+                    </CardHeader>
+                    {topics.length > 0 || description ? (
+                      <CardBody>
+                        {description && (
+                          <p className="text-balance mb-4">{description}</p>
+                        )}
+                        {topics.length > 0 && (
+                          <div className="flex flex-wrap gap-2">
+                            {topics.map((topic) => (
+                              <Chip
+                                size="sm"
+                                className="border-blue"
+                                variant="bordered"
+                                key={topic}
+                              >
+                                <span className="mr-1 text-blue">#</span>
+                                {topic}
+                              </Chip>
+                            ))}
+                          </div>
+                        )}
+                      </CardBody>
+                    ) : null}
+                    {license && (
+                      <CardFooter>
+                        {license && (
+                          <>
+                            <div className="flex items-center gap-2 text-blue dark:text-white">
+                              <LawIcon className="w-5 fill-blue dark:fill-blue" />
+                              <p>{license.name}</p>
+                            </div>
+                          </>
+                        )}
+                      </CardFooter>
+                    )}
+                  </Card>
+                ),
               )}
-            </ul>
-          </CardBody>
-          <Divider />
-          <CardFooter className="overflow-visible p-0">
-            <div className="grid w-full grid-cols-2 gap-4">
-              {twitter_username && (
-                <a
-                  className="flex items-center justify-between gap-2 break-words rounded-md border p-2"
-                  href={`https://twitter.com/${twitter_username}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <span className="flex w-[calc(100%_-_27px)] items-center gap-2">
-                    <TwitterIcon
-                      className={`shrink-0 ${
-                        theme === "dark" ? "fill-white" : "fill-black"
-                      }`}
-                    />
-                    <p className="overflow-hidden truncate text-ellipsis">
-                      {twitter_username}
-                    </p>
-                  </span>
-                  <ArrowIcon
-                    className={`shrink-0 rotate-45 ${
-                      theme === "dark" ? "fill-white" : "fill-black"
-                    }`}
-                  />
-                </a>
-              )}
-              <a
-                className="flex items-center justify-between gap-2 break-words rounded-md border p-2"
-                href={html_url}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span className="flex w-[calc(100%_-_27px)] items-center gap-2">
-                  <OctIcon
-                    width="20"
-                    height="20"
-                    className={`shrink-0 ${
-                      theme === "dark" ? "fill-white" : "fill-black"
-                    }`}
-                  />
-                  <p className="overflow-hidden truncate text-ellipsis">
-                    {login}
-                  </p>
-                </span>
-                <ArrowIcon
-                  className={`shrink-0 rotate-45 ${
-                    theme === "dark" ? "fill-white" : "fill-black"
-                  }`}
-                />
-              </a>
-            </div>
-          </CardFooter>
-        </Card>
-      </section>
+          </section>
+        </>
+      )}
     </main>
   );
 }

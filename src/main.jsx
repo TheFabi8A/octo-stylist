@@ -12,5 +12,5 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <App />
       </UserContext>
     </NextUIProvider>
-  </React.StrictMode>,
+  </React.StrictMode>
 );

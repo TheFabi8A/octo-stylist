@@ -1,6 +1,6 @@
-# GitHub user search app solution
+# GitHub User Search App
 
-Esta es una solución al [desafío de la aplicación de búsqueda de usuarios de GitHub en Frontend Mentor](https://www.frontendmentor.io/challenges/github-user-search-app-Q09YOgaH6).
+This is a solution to the [GitHub User Search App Challenge in Frontend Mentor](https://www.frontendmentor.io/challenges/github-user-search-app-Q09YOgaH6).
 
 ![https://github.com/TheFabi8A/github-user-search-app](https://github.com/TheFabi8A/github-user-search-app/blob/main/screenshot-dark.png)
 ![https://github.com/TheFabi8A/github-user-search-app](https://github.com/TheFabi8A/github-user-search-app/blob/main/screenshot-light.png)
@@ -18,27 +18,33 @@ Esta es una solución al [desafío de la aplicación de búsqueda de usuarios de
 
 ### The challenge
 
-Los usuarios deberían poder:
+Your users should be able to:
 
-- Busque usuarios de GitHub por su nombre de usuario
-- Ver información relevante del usuario según su búsqueda.
-- Cambiar entre temas claros y oscuros
-- Ver estados de desplazamiento para todos los elementos interactivos en la página
-- Ver el diseño óptimo para la aplicación según el tamaño de pantalla de su dispositivo
-- Elija el esquema de color correcto para ellos según sus preferencias informáticas.
+- [x] Search for GitHub users by their username.
+- [x] See relevant user information based on their search.
+- [x] Switch between light and dark themes.
+- [x] View the optimal layout for the app depending on their device's screen size
+- [x] See hover states for all interactive elements on the page
+- [x] **Bonus**: Have the correct color scheme chosen for them based on their computer preferences.
 
 ### Links
 
-- Live Site URL: [Github User Search App - Vercel](https://github-user-search-app-thefabi8a.vercel.app/)
+[![Vercel](https://img.shields.io/badge/live_site-000?style=for-the-badge&logo=vercel&logoColor=black&labelColor=fff)](https://github-user-search-app-thefabi8a.vercel.app/)
+
+[![FrontendMentor](https://img.shields.io/badge/solution_(_not_available_)-f00?style=for-the-badge&logo=frontendmentor&logoColor=white&labelColor=101010)]()
 
 ### Built with
 
-- ReactJS
-- Tailwindcss
-- NextUI
+[![React](https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=white&labelColor=101010)]()
+
+[![Tailwindcss](https://img.shields.io/badge/tailwindcss-61DAFB?style=for-the-badge&logo=tailwindcss&logoColor=white&labelColor=101010)]()
+
+[![NextUI](https://img.shields.io/badge/NextUI-fff?style=for-the-badge&logo=Next.js&logoColor=white&labelColor=101010)](https://nextui.org/docs/guide/introduction)
 
 ## Author
 
-- GitHub - [@TheFabi8A](https://github.com/TheFabi8A)
-- LinkedIn - [@Fabian Ochoa](https://www.linkedin.com/in/fabian-ochoa/)
-- Frontend Mentor - [@TheFabi8A](https://www.frontendmentor.io/profile/TheFabi8A)
+[![Portfolio](https://img.shields.io/badge/thefabi8a.dev-fff?style=for-the-badge&logo=dev.to&logoColor=white&labelColor=101010)](https://thefabi8a.dev)
+
+[![LinkedIn](https://img.shields.io/badge/fabian_ochoa-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=101010)](https://www.linkedin.com/in/fabian-ochoa)
+
+[![FrontendMentor](https://img.shields.io/badge/thefabi8a-fff?style=for-the-badge&logo=frontendmentor&logoColor=white&labelColor=101010)](https://www.frontendmentor.io/profile/TheFabi8A)
