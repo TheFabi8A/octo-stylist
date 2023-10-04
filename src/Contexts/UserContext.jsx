@@ -1,8 +1,9 @@
-import { createContext, useEffect, useState } from "react";
+import { createContext, useEffect, useRef, useState } from "react";
 
 export const GithubUserContext = createContext();
 
 import { ChildrenPropTypes } from "../PropTypes";
+
 import useFetch from "../Hooks/useFetch";
 
 UserContext.propTypes = {
@@ -12,14 +13,12 @@ UserContext.propTypes = {
 export default function UserContext({ children }) {
   const [theme, setTheme] = useState("dark" || "light");
 
-  const [patternSelected, setSelectedPattern] = useState("Python");
-  console.log(patternSelected);
-
   const [userName, setUserName] = useState(
     localStorage.getItem("userName") || "thefabi8a",
   );
 
-  const [accentColor, setAccentColor] = useState("#ff22ff");
+  const [queryInput, setQueryInput] = useState("");
+  const [errorMessage, setErrorMessage] = useState("");
 
   const { dataUser, errorFetch, topRepos, remainingRequests } =
     useFetch(userName);
@@ -28,8 +27,25 @@ export default function UserContext({ children }) {
     localStorage.setItem("userName", userName);
   }, [userName]);
 
-  const [queryInput, setQueryInput] = useState("");
-  const [errorMessage, setErrorMessage] = useState("");
+  // ! Card Design State Variables
+
+  const CardHeaderBannerRef = useRef(null);
+  const CardHeaderBannerPreviewRef = useRef(null);
+
+  const GitHubUserCardRef = useRef(null);
+  const BannerGradientOneRef = useRef(null);
+  const BannerGradientTwoRef = useRef(null);
+
+  const OctIconRef = useRef(null);
+  const LocationIconRef = useRef(null);
+  const CompanyIconRef = useRef(null);
+  const WebsiteIconRef = useRef(null);
+
+  const [patternSelected, setSelectedPattern] = useState("JavaScript");
+
+  const [bannerCardImageFile, setBannerCardImageFile] = useState(null);
+
+  //--------------------------------------------->
 
   return (
     <GithubUserContext.Provider
@@ -46,10 +62,19 @@ export default function UserContext({ children }) {
         setErrorMessage,
         topRepos,
         remainingRequests,
-        accentColor,
-        setAccentColor,
         patternSelected,
         setSelectedPattern,
+        bannerCardImageFile,
+        setBannerCardImageFile,
+        CardHeaderBannerRef,
+        CardHeaderBannerPreviewRef,
+        OctIconRef,
+        LocationIconRef,
+        CompanyIconRef,
+        WebsiteIconRef,
+        GitHubUserCardRef,
+        BannerGradientOneRef,
+        BannerGradientTwoRef,
       }}
     >
       {children}

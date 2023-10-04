@@ -26,6 +26,7 @@
 
 .text-balance {
   text-wrap: balance;
+  background: radial-gradient(circle top left);
 }
 
 body {

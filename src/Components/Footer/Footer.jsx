@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <>
       <footer className="flex w-full flex-col justify-center py-4">
-        <p className="text-center">
+        <p className="mb-2 text-center">
           {new Date().getFullYear()} &copy; Fabian Ochoa
         </p>
         <Button

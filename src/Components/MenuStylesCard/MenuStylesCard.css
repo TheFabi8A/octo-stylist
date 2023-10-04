@@ -1,0 +1,33 @@
+.input-color {
+  appearance: none;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  width: 100px;
+  height: 100px;
+}
+
+html.dark .input-color::-webkit-color-swatch {
+  outline: 2px solid #fff;
+}
+
+.input-color::-webkit-color-swatch {
+  border-radius: 1rem;
+  outline: 2px solid #000;
+  transition: outline 150ms ease-in-out;
+  border: none;
+  outline-offset: 4px;
+}
+
+html.dark .input-color:hover::-webkit-color-swatch {
+  outline: 2px solid #ffffff2f;
+}
+
+.input-color:hover::-webkit-color-swatch {
+  outline: 2px solid #0000002f;
+}
+
+.input-color::-moz-color-swatch {
+  border-radius: 1rem;
+  border: none;
+}

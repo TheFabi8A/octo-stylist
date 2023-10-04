@@ -1,6 +1,6 @@
-export const ChevronDownIcon = () => (
+export const ChevronDownIcon = (props) => (
   <svg
-    className="text-white dark:text-black"
+    {...props}
     height="14"
     viewBox="0 0 24 24"
     width="14"
