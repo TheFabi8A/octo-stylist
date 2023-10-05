@@ -18,7 +18,7 @@ export default function Footer() {
           }
           className="self-center border-blue text-blue transition-colors dark:text-white"
         >
-          Github User Search App
+          Octo Stylist
         </Button>
       </footer>
     </>

@@ -26,7 +26,6 @@ export const Index = () => {
     CompanyIconRef,
     WebsiteIconRef,
     GitHubUserCardRef,
-    theme,
     BannerGradientOneRef,
     BannerGradientTwoRef,
   } = useContext(GithubUserContext);
@@ -119,9 +118,7 @@ export const Index = () => {
     const value = e.target.value;
 
     if (GitHubUserCardRef.current) {
-      GitHubUserCardRef.current.style.background = `linear-gradient(to bottom, ${
-        theme === "dark" ? "#141d2e" : "#ffffff"
-      }, ${value})`;
+      GitHubUserCardRef.current.style.background = `linear-gradient(to bottom, transparent, ${value})`;
 
       GitHubUserCardRef.current.style.borderBottom = `4px dashed ${value}`;
       GitHubUserCardRef.current.style.borderRight = `4px dashed ${value}`;

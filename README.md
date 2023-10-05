@@ -1,4 +1,4 @@
-# GitHub User Search App
+# Octo Stylist
 
 This is a solution to the [GitHub User Search App Challenge in Frontend Mentor](https://www.frontendmentor.io/challenges/github-user-search-app-Q09YOgaH6).
 
@@ -12,7 +12,6 @@ This is a solution to the [GitHub User Search App Challenge in Frontend Mentor](
   - [Links](#links)
 - [Built with](#built-with)
 - [Author](#author)
-- [Acknowledgment](#acknowledgment)
 
 ## Overview
 

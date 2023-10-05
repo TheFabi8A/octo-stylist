@@ -84,6 +84,7 @@ export default function UserCard() {
                 backgroundImage: `url(${bannerCardImageFile})`,
                 backgroundRepeat: "no-repeat",
                 backgroundSize: "cover",
+                backgroundPosition: "center",
               }
             : {
                 background: `
