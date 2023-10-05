@@ -10,7 +10,7 @@ export default function Footer() {
         </p>
         <Button
           as={Link}
-          href="https://github.com/TheFabi8A/github-user-search-app"
+          href="https://github.com/TheFabi8A/octo-stylist"
           target="blank"
           variant="bordered"
           startContent={

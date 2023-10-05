@@ -28,7 +28,7 @@ Your users should be able to:
 
 ### Links
 
-[![Vercel](https://img.shields.io/badge/live_site-000?style=for-the-badge&logo=vercel&logoColor=black&labelColor=fff)](https://github-user-search-app-thefabi8a.vercel.app/)
+[![Vercel](https://img.shields.io/badge/live_site-000?style=for-the-badge&logo=vercel&logoColor=black&labelColor=fff)](https://octo-stylist.vercel.app/)
 
 [![FrontendMentor](https://img.shields.io/badge/solution_(_not_available_)-f00?style=for-the-badge&logo=frontendmentor&logoColor=white&labelColor=101010)]()
 
