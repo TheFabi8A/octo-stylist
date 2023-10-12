@@ -2,9 +2,6 @@
 
 This is a solution to the [GitHub User Search App Challenge in Frontend Mentor](https://www.frontendmentor.io/challenges/github-user-search-app-Q09YOgaH6).
 
-![https://github.com/TheFabi8A/octo-stylist](https://github.com/TheFabi8A/octo-stylist/blob/main/screenshot-dark.png)
-![https://github.com/TheFabi8A/octo-stylist](https://github.com/TheFabi8A/octo-stylist/blob/main/screenshot-light.png)
-
 ## Table of contents
 
 - [Overview](#overview)
@@ -12,6 +9,9 @@ This is a solution to the [GitHub User Search App Challenge in Frontend Mentor](
   - [Links](#links)
 - [Built with](#built-with)
 - [Author](#author)
+
+![https://github.com/TheFabi8A/octo-stylist](https://github.com/TheFabi8A/octo-stylist/blob/main/screenshot-dark.png)
+![https://github.com/TheFabi8A/octo-stylist](https://github.com/TheFabi8A/octo-stylist/blob/main/screenshot-light.png)
 
 ## Overview
 
@@ -32,7 +32,7 @@ Your users should be able to:
 
 [![FrontendMentor](https://img.shields.io/badge/solution_(_not_available_)-f00?style=for-the-badge&logo=frontendmentor&logoColor=white&labelColor=101010)]()
 
-### Built with
+## Built with
 
 [![React](https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=white&labelColor=101010)]()
 
