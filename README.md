@@ -2,8 +2,8 @@
 
 This is a solution to the [GitHub User Search App Challenge in Frontend Mentor](https://www.frontendmentor.io/challenges/github-user-search-app-Q09YOgaH6).
 
-![https://github.com/TheFabi8A/github-user-search-app](https://github.com/TheFabi8A/github-user-search-app/blob/main/screenshot-dark.png)
-![https://github.com/TheFabi8A/github-user-search-app](https://github.com/TheFabi8A/github-user-search-app/blob/main/screenshot-light.png)
+![https://github.com/TheFabi8A/octo-stylist](https://github.com/TheFabi8A/octo-stylist/blob/main/screenshot-dark.png)
+![https://github.com/TheFabi8A/octo-stylist](https://github.com/TheFabi8A/octo-stylist/blob/main/screenshot-light.png)
 
 ## Table of contents
 
