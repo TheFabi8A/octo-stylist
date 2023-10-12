@@ -47,3 +47,5 @@ Your users should be able to:
 [![LinkedIn](https://img.shields.io/badge/fabian_ochoa-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=101010)](https://www.linkedin.com/in/fabian-ochoa)
 
 [![FrontendMentor](https://img.shields.io/badge/thefabi8a-fff?style=for-the-badge&logo=frontendmentor&logoColor=white&labelColor=101010)](https://www.frontendmentor.io/profile/TheFabi8A)
+
+[![X](https://img.shields.io/badge/TheFabi8A-1DA1F2?style=for-the-badge&logo=X&logoColor=white&labelColor=101010)](https://twitter.com/TheFabi8ADev)
