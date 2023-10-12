@@ -6,12 +6,10 @@ This is a solution to the [GitHub User Search App Challenge in Frontend Mentor](
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
+  - [Screenshots](#screenshots)
   - [Links](#links)
 - [Built with](#built-with)
 - [Author](#author)
-
-![https://github.com/TheFabi8A/octo-stylist](https://github.com/TheFabi8A/octo-stylist/blob/main/screenshot-dark.png)
-![https://github.com/TheFabi8A/octo-stylist](https://github.com/TheFabi8A/octo-stylist/blob/main/screenshot-light.png)
 
 ## Overview
 
@@ -25,6 +23,11 @@ Your users should be able to:
 - View the optimal layout for the app depending on their device's screen size. ✅
 - See hover states for all interactive elements on the page ✅
 - **Bonus**: Have the correct color scheme chosen for them based on their computer preferences. ✅
+
+### Screenshots
+
+![https://github.com/TheFabi8A/octo-stylist](https://github.com/TheFabi8A/octo-stylist/blob/main/screenshot-dark.png)
+![https://github.com/TheFabi8A/octo-stylist](https://github.com/TheFabi8A/octo-stylist/blob/main/screenshot-light.png)
 
 ### Links
 
