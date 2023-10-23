@@ -137,6 +137,7 @@ export default function UserCard() {
               href={html_url}
               target="_blank"
               rel="noopener noreferrer"
+              title="Go to GitHub Profile"
             >
               <OctIcon className="w-7 fill-white dark:fill-black" />
             </Button>
@@ -170,7 +171,11 @@ export default function UserCard() {
           showArrow={true}
         >
           <PopoverTrigger>
-            <Button className="rounded-none bg-transparent" isIconOnly>
+            <Button
+              title="Public Repositories"
+              className="rounded-none bg-transparent"
+              isIconOnly
+            >
               <RepoIcon className="w-6 dark:fill-white" />
             </Button>
           </PopoverTrigger>
@@ -204,7 +209,11 @@ export default function UserCard() {
           showArrow={true}
         >
           <PopoverTrigger>
-            <Button className="rounded-none bg-transparent" isIconOnly>
+            <Button
+              title="Followers"
+              className="rounded-none bg-transparent"
+              isIconOnly
+            >
               <PeopleIcon className="w-6 dark:fill-white" />
             </Button>
           </PopoverTrigger>
@@ -238,7 +247,11 @@ export default function UserCard() {
           showArrow={true}
         >
           <PopoverTrigger>
-            <Button className="rounded-none bg-transparent" isIconOnly>
+            <Button
+              title="Following"
+              className="rounded-none bg-transparent"
+              isIconOnly
+            >
               <PersonIcon className="w-6 dark:fill-white" />
             </Button>
           </PopoverTrigger>

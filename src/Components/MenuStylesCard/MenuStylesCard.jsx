@@ -1,13 +1,13 @@
+import { Divider } from "@nextui-org/divider";
+import { Input } from "@nextui-org/input";
+import { Button, ButtonGroup } from "@nextui-org/button";
+
 import {
-  Button,
-  ButtonGroup,
-  Divider,
   Dropdown,
-  DropdownItem,
-  DropdownMenu,
   DropdownTrigger,
-  Input,
-} from "@nextui-org/react";
+  DropdownMenu,
+  DropdownItem,
+} from "@nextui-org/dropdown";
 
 import { ChevronDownIcon, CloseIcon, DownloadIcon, UploadIcon } from "../Svg";
 
@@ -111,6 +111,8 @@ export default function MenuStylesCard() {
                       isIconOnly
                       id="trigger-pattern"
                       className="trigger-patern"
+                      title="View more patterns."
+                      aria-label="View more patterns."
                       style={{ background: `${StrongColor}` }}
                     >
                       <ChevronDownIcon className="text-white dark:text-very-dark-blue-darker" />

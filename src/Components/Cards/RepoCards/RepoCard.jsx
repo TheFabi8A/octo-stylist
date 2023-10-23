@@ -1,12 +1,8 @@
-import {
-  Card,
-  CardHeader,
-  CardBody,
-  CardFooter,
-  Avatar,
-  Chip,
-  Link,
-} from "@nextui-org/react";
+import { Avatar } from "@nextui-org/avatar";
+import { Chip } from "@nextui-org/chip";
+import { Link } from "@nextui-org/link";
+
+import { Card, CardHeader, CardBody, CardFooter } from "@nextui-org/card";
 
 import { BranchIcon, ForkIcon, IssueIcon, LawIcon, StarIcon } from "../../Svg";
 
@@ -49,19 +45,17 @@ export default function RepoCard() {
                   isBordered
                 />
                 <div className="flex flex-col">
-                  <div>
-                    <Link
-                      aria-label={`Go to ${name} repository`}
-                      className="flex items-center text-left hover:underline hover:decoration-yellow-500 hover:decoration-wavy dark:text-white"
-                      href={html_url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      isExternal
-                      showAnchorIcon
-                    >
-                      {full_name}
-                    </Link>
-                  </div>
+                  <Link
+                    aria-label={`Go to ${full_name} repository`}
+                    className="flex items-center text-left hover:underline hover:decoration-yellow-500 hover:decoration-wavy dark:text-white"
+                    href={html_url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    isExternal
+                    showAnchorIcon
+                  >
+                    {full_name}
+                  </Link>
                   <div className="flex gap-2">
                     <div className="flex items-center gap-1">
                       <StarIcon className="w-4 fill-yellow-500" />

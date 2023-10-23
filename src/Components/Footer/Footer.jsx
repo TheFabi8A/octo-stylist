@@ -1,4 +1,6 @@
-import { Button, Link } from "@nextui-org/react";
+import { Button } from "@nextui-org/button";
+import { Link } from "@nextui-org/link";
+
 import { OctIcon } from "../Svg";
 
 export default function Footer() {
