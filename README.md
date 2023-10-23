@@ -2,13 +2,11 @@
 
 This is a solution to the [GitHub User Search App Challenge in Frontend Mentor](https://www.frontendmentor.io/challenges/github-user-search-app-Q09YOgaH6).
 
-![https://github.com/TheFabi8A/github-user-search-app](https://github.com/TheFabi8A/github-user-search-app/blob/main/screenshot-dark.png)
-![https://github.com/TheFabi8A/github-user-search-app](https://github.com/TheFabi8A/github-user-search-app/blob/main/screenshot-light.png)
-
 ## Table of contents
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
+  - [Screenshots](#screenshots)
   - [Links](#links)
 - [Built with](#built-with)
 - [Author](#author)
@@ -26,13 +24,18 @@ Your users should be able to:
 - See hover states for all interactive elements on the page ✅
 - **Bonus**: Have the correct color scheme chosen for them based on their computer preferences. ✅
 
+### Screenshots
+
+![https://github.com/TheFabi8A/octo-stylist](https://github.com/TheFabi8A/octo-stylist/blob/main/screenshot-dark.png)
+![https://github.com/TheFabi8A/octo-stylist](https://github.com/TheFabi8A/octo-stylist/blob/main/screenshot-light.png)
+
 ### Links
 
 [![Vercel](https://img.shields.io/badge/live_site-000?style=for-the-badge&logo=vercel&logoColor=black&labelColor=fff)](https://octo-stylist.vercel.app/)
 
 [![FrontendMentor](https://img.shields.io/badge/solution_(_not_available_)-f00?style=for-the-badge&logo=frontendmentor&logoColor=white&labelColor=101010)]()
 
-### Built with
+## Built with
 
 [![React](https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=white&labelColor=101010)]()
 
@@ -47,3 +50,5 @@ Your users should be able to:
 [![LinkedIn](https://img.shields.io/badge/fabian_ochoa-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=101010)](https://www.linkedin.com/in/fabian-ochoa)
 
 [![FrontendMentor](https://img.shields.io/badge/thefabi8a-fff?style=for-the-badge&logo=frontendmentor&logoColor=white&labelColor=101010)](https://www.frontendmentor.io/profile/TheFabi8A)
+
+[![X](https://img.shields.io/badge/TheFabi8A-1DA1F2?style=for-the-badge&logo=X&logoColor=white&labelColor=101010)](https://twitter.com/TheFabi8ADev)
