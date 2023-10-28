@@ -43,7 +43,7 @@ export default function UserContext({ children }) {
 
   const [patternSelected, setSelectedPattern] = useState("JavaScript");
 
-  const [bannerCardImageFile, setBannerCardImageFile] = useState(null);
+  const [bannerCardImageFile, setBannerCardImageFile] = useState("");
 
   //--------------------------------------------->
 
