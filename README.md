@@ -26,8 +26,8 @@ Your users should be able to:
 
 ### Screenshots
 
-![https://github.com/TheFabi8A/octo-stylist](https://github.com/TheFabi8A/octo-stylist/blob/main/screenshot-dark.png)
-![https://github.com/TheFabi8A/octo-stylist](https://github.com/TheFabi8A/octo-stylist/blob/main/screenshot-light.png)
+![https://github.com/TheFabi8A/octo-stylist](https://github.com/TheFabi8A/octo-stylist/blob/main/public/screenshot-dark.png)
+![https://github.com/TheFabi8A/octo-stylist](https://github.com/TheFabi8A/octo-stylist/blob/main/public/screenshot-light.png)
 
 ### Links
 
