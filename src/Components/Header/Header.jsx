@@ -8,7 +8,7 @@ export default function Header() {
           <img
             width={40}
             height={40}
-            src="assets/images/3d-fluency-github-logo.webp"
+            src="assets/images/Octo-Stylist-Icon-Pixelart.png"
             alt="3D Logo GitHub"
           />
           <h1 className="text-3xl">Octo Stylist</h1>

@@ -33,15 +33,15 @@ Your users should be able to:
 
 [![Vercel](https://img.shields.io/badge/live_site-000?style=for-the-badge&logo=vercel&logoColor=black&labelColor=fff)](https://octo-stylist.vercel.app/)
 
-[![FrontendMentor](https://img.shields.io/badge/solution_(_not_available_)-f00?style=for-the-badge&logo=frontendmentor&logoColor=white&labelColor=101010)]()
+[![FrontendMentor](https://img.shields.io/badge/solution_(_not_available_)-f00?style=for-the-badge&logo=frontendmentor&logoColor=white&labelColor=101010)](https://www.frontendmentor.io/profile/TheFabi8A)
 
 ## Built with
 
-[![React](https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=white&labelColor=101010)]()
+[![React](https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=white&labelColor=101010)](https://react.dev/)
 
-[![Tailwindcss](https://img.shields.io/badge/tailwindcss-61DAFB?style=for-the-badge&logo=tailwindcss&logoColor=white&labelColor=101010)]()
+[![Tailwindcss](https://img.shields.io/badge/tailwindcss-61DAFB?style=for-the-badge&logo=tailwindcss&logoColor=white&labelColor=101010)](https://tailwindcss.com/)
 
-[![NextUI](https://img.shields.io/badge/NextUI-fff?style=for-the-badge&logo=Next.js&logoColor=white&labelColor=101010)](https://nextui.org/docs/guide/introduction)
+[![NextUI](https://img.shields.io/badge/NextUI-fff?style=for-the-badge&logo=Next.js&logoColor=white&labelColor=101010)](https://nextui.org/docs)
 
 ## Author
 
